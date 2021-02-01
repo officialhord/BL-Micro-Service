@@ -10,6 +10,7 @@ import org.springframework.web.client.RestTemplate;
 import java.util.Arrays;
 import java.util.List;
 import java.util.stream.Collectors;
+
 import com.officialhord.accountservice.resources.*;
 
 @RestController
@@ -22,7 +23,7 @@ public class AccountServiceResource {
     @RequestMapping("/{userId}")
     public List<Accounts> getAccounts(@PathVariable("userId") String userId) {
 
-        //  Account accounts =  restTemplate.getForObject("http://localhost:8081/accountdetails/test", Account.class);
+        //Account accounts =  restTemplate.getForObject("http://localhost:8081/accountdetails/test", Account.class);
 
         List<Accountdetails> accountdetails = Arrays.asList(
                 new Accountdetails("Basic Savers", 809896122, 100000, 20300)
@@ -38,9 +39,6 @@ public class AccountServiceResource {
         })
                 .collect(Collectors.toList());
 
-//    return Collections.singletonList(
-//            new Accounts("Basic Savers", "Level 01")
-//    );
 
     }
 }
