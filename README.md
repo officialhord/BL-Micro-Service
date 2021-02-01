@@ -2,6 +2,6 @@
 
 This repo is created to build a sample Micro Service with Java.
 
-Contribuotrs include:
+Contributors include:
 - Akinola John (Service Builder)
 - Favour Chukwuedo (Front-end API Consumer)
